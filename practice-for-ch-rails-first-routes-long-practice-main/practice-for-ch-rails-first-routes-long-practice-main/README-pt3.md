@@ -1,7 +1,6 @@
 ## Phase III: Playing with parameters
 
-Now you're going to focus on how data comes into your controllers from the
-outside world.
+Now you're going to focus on how data comes into your controllers from the outside world.
 
 The key method here is `#params`. `#params` is a method provided by
 `ActionController::Base` that returns a Hash-like object of all the parameters
@@ -10,7 +9,7 @@ places:
 
 1. Route parameters (e.g., the `:id` from `/users/:id`)
 2. A query string (i.e., the part of the URL after the `?`: `?key=value`)
-3. `POST`/`PATCH`/`PUT` request data (i.e., the body of an HTTP request)
+3. `POST`/`PATCH`/`PUT` (create/update/update) request data (i.e., the body of an HTTP request)
 
 Make some `GET` requests to `/users` that include some key/value pairs in the
 query string, e.g., `/users?fav_food=pizza` or `/users?admin=true`.

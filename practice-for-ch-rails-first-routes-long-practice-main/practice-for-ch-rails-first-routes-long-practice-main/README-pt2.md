@@ -25,7 +25,7 @@ end
 Note that **controllers are always plural**; a controller manages requests that
 pertain to a collection of _resources_. A resource is generally anything that
 has a table in your database. In other words, it is anything in your application
-that you will be CRUDing.
+that you will be CRUDing.23
 
 Controllers inherit from `ApplicationController`, which is a controller itself,
 but one that never actually handles any requests directly.

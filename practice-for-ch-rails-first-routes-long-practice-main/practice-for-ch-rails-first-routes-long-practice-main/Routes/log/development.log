@@ -1,0 +1,273 @@
+Started GET "/" for ::1 at 2023-11-22 14:54:44 -0500
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ntong/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ntong/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 353)
+Completed 200 OK in 37ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 6919)
+
+
+Started GET "/" for ::1 at 2023-11-22 15:01:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ntong/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ntong/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 353)
+Completed 200 OK in 9ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3979)
+
+
+Started GET "/users" for ::1 at 2023-11-22 15:04:56 -0500
+
+SyntaxError - syntax error, unexpected end-of-input, expecting `end':
+  app/controllers/users_controller.rb:3:in `'
+
+Started GET "/users" for ::1 at 2023-11-22 15:05:46 -0500
+
+AbstractController::ActionNotFound - The action 'index' could not be found for UsersController:
+
+Started GET "/users" for ::1 at 2023-11-22 15:06:05 -0500
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 531)
+
+
+Started GET "/" for ::1 at 2023-11-22 15:08:13 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ntong/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ntong/.rbenv/versions/3.1.1/lib/ruby/gems/3.1.0/gems/railties-7.1.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.7ms | Allocations: 272)
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 1008)
+
+
+Started GET "/users" for ::1 at 2023-11-22 15:08:23 -0500
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 1047)
+
+
+
+ActionController::MissingExactTemplate - UsersController#index is missing a template for request formats: text/html:
+
+Started POST "/__better_errors/fd72ec0b6de542e8/variables" for ::1 at 2023-11-22 15:08:23 -0500
+Started GET "/users" for ::1 at 2023-11-22 15:08:57 -0500
+Processing by UsersController#index as HTML
+Completed 406 Not Acceptable in 0ms (ActiveRecord: 0.0ms | Allocations: 985)
+
+
+
+ActionController::MissingExactTemplate - UsersController#index is missing a template for request formats: text/html:
+
+Started POST "/__better_errors/1dbdfb6bb3dbe48c/variables" for ::1 at 2023-11-22 15:08:57 -0500
+Started GET "/users" for ::1 at 2023-11-22 15:11:23 -0500
+Processing by UsersController#index as */*
+No template found for UsersController#index, rendering head :no_content
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 130)
+
+
+Started GET "/users" for ::1 at 2023-11-22 15:13:27 -0500
+Processing by UsersController#index as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 662)
+
+
+Started GET "/users" for ::1 at 2023-11-22 15:13:42 -0500
+Processing by UsersController#index as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 509)
+
+
+Started GET "/users?fav_food=pizza" for ::1 at 2023-11-22 15:20:12 -0500
+Processing by UsersController#index as */*
+  Parameters: {"fav_food"=>"pizza"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 1)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 514)
+
+
+Started POST "/users" for ::1 at 2023-11-22 15:21:45 -0500
+
+AbstractController::ActionNotFound - The action 'create' could not be found for UsersController:
+
+Started POST "/users?fav_food=pizza" for ::1 at 2023-11-22 15:22:01 -0500
+
+AbstractController::ActionNotFound - The action 'create' could not be found for UsersController:
+
+Started POST "/users?fav_food=pizza" for ::1 at 2023-11-22 15:23:25 -0500
+Processing by UsersController#create as */*
+  Parameters: {"fav_food"=>"pizza"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 232)
+
+
+Started GET "/users/:id" for ::1 at 2023-11-22 15:28:48 -0500
+
+AbstractController::ActionNotFound - The action 'show' could not be found for UsersController:
+
+Started GET "/users/:id" for ::1 at 2023-11-22 15:29:50 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>":id"}
+No template found for UsersController#show, rendering head :no_content
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms | Allocations: 480)
+
+
+Started GET "/users/:id" for ::1 at 2023-11-22 15:30:18 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>":id"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 205)
+
+
+Started GET "/users/2" for ::1 at 2023-11-22 15:30:40 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 98)
+
+
+Started POST "/users/2" for ::1 at 2023-11-22 15:30:58 -0500
+  
+ActionController::RoutingError (No route matches [POST] "/users/2"):
+  
+Started GET "/users/2" for ::1 at 2023-11-22 15:31:15 -0500
+Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 144)
+
+
+Started GET "/users/2?a_key=[FILTERED]" for ::1 at 2023-11-22 15:41:07 -0500
+Processing by UsersController#show as */*
+  Parameters: {"a_key"=>"[FILTERED]", "id"=>"2"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 207)
+
+
+Started GET "/users/2?a_key=[FILTERED]&a_second_key=[FILTERED]" for ::1 at 2023-11-22 15:41:36 -0500
+Processing by UsersController#show as */*
+  Parameters: {"a_key"=>"[FILTERED]", "a_second_key"=>"[FILTERED]", "id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 100)
+
+
+Started GET "/users/2?a_key=[FILTERED]&a_second_key=[FILTERED]&inner_inner_key=[FILTERED]" for ::1 at 2023-11-22 15:42:07 -0500
+Processing by UsersController#show as */*
+  Parameters: {"a_key"=>"[FILTERED]", "a_second_key"=>"[FILTERED]", "inner_inner_key"=>"[FILTERED]", "id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 101)
+
+
+Started GET "/users/2?some_category={%0A%20%20%20%20%22a_key%22:%20%22another%20value%22,%0A%20%20%20%20%22a_second_key%22:%20%22yet%20another%20value%22,%0A%20%20%20%20%22inner_inner_hash%22:%20{%0A%20%20%20%20%20%20%22key%22:%20%22value%22%0A%20%20%20%20}%0A%20%20}" for ::1 at 2023-11-22 15:42:41 -0500
+Processing by UsersController#show as */*
+  Parameters: {"some_category"=>"{\n    \"a_key\": \"another value\",\n    \"a_second_key\": \"yet another value\",\n    \"inner_inner_hash\": {\n      \"key\": \"value\"\n    }\n  }", "id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/users/2?some_category={%0A%20%20%20%20%22a_key%22:%20%22another%20value%22,%0A%20%20%20%20%22a_second_key%22:%20%22yet%20another%20value%22,%0A%20%20%20%20%22inner_inner_hash%22:%20{%0A%20%20%20%20%20%20%22key%22:%20%22value%22%0A%20%20%20%20}%0A%20%20}" for ::1 at 2023-11-22 15:44:07 -0500
+Processing by UsersController#show as */*
+  Parameters: {"text/plain"=>["some_category[a_key]: another value\nsome_category[a_second_key]: yet another value\nsome_category[inner_inner_hash][key]: value\nsomething_else: aaahhhhh"], "some_category"=>"{\n    \"a_key\": \"another value\",\n    \"a_second_key\": \"yet another value\",\n    \"inner_inner_hash\": {\n      \"key\": \"value\"\n    }\n  }", "id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 214)
+
+
+Started GET "/users/2?some_category={%0A%20%20%20%20%22a_key%22:%20%22another%20value%22,%0A%20%20%20%20%22a_second_key%22:%20%22yet%20another%20value%22,%0A%20%20%20%20%22inner_inner_hash%22:%20{%0A%20%20%20%20%20%20%22key%22:%20%22value%22%0A%20%20%20%20}%0A%20%20}" for ::1 at 2023-11-22 15:44:27 -0500
+Processing by UsersController#show as */*
+  Parameters: {"some_category"=>"{\n    \"a_key\": \"another value\",\n    \"a_second_key\": \"yet another value\",\n    \"inner_inner_hash\": {\n      \"key\": \"value\"\n    }\n  }", "id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/users/2?some_category={%0A%20%20%20%20%22a_key%22:%20%22another%20value%22,%0A%20%20%20%20%22a_second_key%22:%20%22yet%20another%20value%22,%0A%20%20%20%20%22inner_inner_hash%22:%20{%0A%20%20%20%20%20%20%22key%22:%20%22value%22%0A%20%20%20%20}%0A%20%20}" for ::1 at 2023-11-22 15:46:38 -0500
+Processing by UsersController#show as */*
+  Parameters: {"some_category"=>"{\n    \"a_key\": \"another value\",\n    \"a_second_key\": \"yet another value\",\n    \"inner_inner_hash\": {\n      \"key\": \"value\"\n    }\n  }", "id"=>"2"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/users/2" for ::1 at 2023-11-22 15:46:47 -0500
+Processing by UsersController#show as */*
+  Parameters: {"some_category"=>"{}", "id"=>"2"}
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 99)
+
+
+Started GET "/users/2" for ::1 at 2023-11-22 15:47:21 -0500
+
+ActionController::BadRequest - Invalid request parameters: expected Hash (got String) for param `some_category':
+
+Started GET "/users/2" for ::1 at 2023-11-22 15:48:02 -0500
+Processing by UsersController#show as */*
+  Parameters: {"some_category"=>{"a_key"=>"[FILTERED]"}, "id"=>"2"}
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 103)
+
+
+Started GET "/users/2" for ::1 at 2023-11-22 15:49:02 -0500
+Processing by UsersController#show as */*
+  Parameters: {"some_category"=>{"a_key"=>"[FILTERED]", "a_second_key"=>"[FILTERED]", "inner_inner_hash"=>{"key"=>"value"}}, "something_else"=>"aaahhhhh", "id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 108)
+
+
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1[0m  [[nil, "environment"]]
+  [1m[36mActiveRecord::InternalMetadata Create (2.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2023-11-22 21:15:54.161612', '2023-11-22 21:15:54.161617') RETURNING "key"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20231122211337)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "email" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20231122211337') RETURNING "version"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "John Doe"], ["email", "john@example.com"], ["created_at", "2023-11-22 21:20:57.772737"], ["updated_at", "2023-11-22 21:20:57.772737"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Jon Deer"], ["email", "jon@example.com"], ["created_at", "2023-11-22 21:21:39.457324"], ["updated_at", "2023-11-22 21:21:39.457324"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?) RETURNING "id"[0m  [["name", "Dope Boi"], ["email", "DB@example.com"], ["created_at", "2023-11-22 21:21:59.046245"], ["updated_at", "2023-11-22 21:21:59.046245"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/users/" for ::1 at 2023-11-22 16:33:26 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:5:in `index'
+Completed 200 OK in 53ms (Views: 9.4ms | ActiveRecord: 6.8ms | Allocations: 15761)
+
+
+Started GET "/users/" for ::1 at 2023-11-22 16:34:27 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 2.0ms | Allocations: 4846)
+
+
+Started GET "/users/" for ::1 at 2023-11-22 16:34:33 -0500
+Processing by UsersController#index as */*
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 4)
+Completed 500 Internal Server Error in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2967)
+
+
+
+AbstractController::DoubleRenderError - Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...); return".:
+  app/controllers/users_controller.rb:6:in `index'
+
+Started GET "/users/" for ::1 at 2023-11-22 16:34:54 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 7ms (Views: 4.0ms | ActiveRecord: 1.5ms | Allocations: 4801)
+
+
+Started POST "/users/" for ::1 at 2023-11-22 16:36:11 -0500
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 1482)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/users_controller.rb:14:in `create'
+
+Started GET "/users/" for ::1 at 2023-11-22 16:36:46 -0500
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:6:in `index'
+Completed 200 OK in 17ms (Views: 8.7ms | ActiveRecord: 6.6ms | Allocations: 4340)
+
+
+Started POST "/users/" for ::1 at 2023-11-22 16:37:16 -0500
+Processing by UsersController#create as */*
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 1116)
+
+
+
+ActionController::ParameterMissing - param is missing or the value is empty: user:
+  app/controllers/users_controller.rb:14:in `create'
+
